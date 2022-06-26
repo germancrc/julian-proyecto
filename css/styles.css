@@ -1,0 +1,135 @@
+body{
+    font-family: 'roboto', sans-serif;
+}
+
+.logo{
+    width: auto;
+    height: 3rem;
+}
+
+nav.abajo{
+  background: #fff;
+  box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.75);
+}
+
+.menu{
+  font-weight: bold;
+}
+
+
+.carousel-caption{
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    margin: 0 auto;
+}
+
+
+ .slide1 {
+    background-image: url("../img/slideGirl.jpg");
+    height: 99vh;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+  }
+
+  .slide2 {
+    background-image: url("../img/playa.jpg");
+    height: 99vh;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+  }
+
+  .slide3 {
+    background-image: url("../img/aeropuerto.jpg");
+    height: 99vh;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+  }
+
+  /*-----------------------------------SERVICIOS*/
+
+  .servicios{
+    text-align: center;
+    padding-top: 1.5rem;
+  }
+
+  .tabla{
+    margin-top: 2rem;
+  }
+
+  .fila2{
+    margin-top: 3rem;
+  }
+
+  .foot{
+    background-color: #333333;
+  }
+
+  .logo-foot{
+    width: 50%;
+    display: block;
+    margin-top: -1rem;
+  }
+
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.05);
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  a{
+   text-decoration: none;
+   color: black;
+  }
+
+  
+  /* Add some padding inside the card container */
+  .containers {
+    padding: 8px 14px;
+  }
+
+    /*---------------------------MEDIA QUERIES----------------------------------------------------*/
+  
+  /*PANTALLAS PEQ*/
+  @media (max-width: 575.98px) {
+    .slide1, .slide2, .slide3{
+      height: 40vh;
+    }
+
+    .card{
+      margin-top: 3rem;
+    }
+
+    .fila2{
+      margin-top: 0;
+    }
+    
+    .tabla{
+      margin-top: -2rem;
+    }
+  }
