@@ -164,8 +164,14 @@ nav.abajo{
   
   /*PANTALLAS PEQ*/
   @media (max-width: 575.98px) {
-    .slide1, .slide2, .slide3, .transport-head{
+
+    .slide1, .slide2, .slide3{
       height: 40vh;
+    }
+
+    .slide1, .slide2, .slide3{
+      height: 60vh;
+
     }
 
     .card{
