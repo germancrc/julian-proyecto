@@ -126,9 +126,11 @@ nav.abajo{
     background-color: blue; /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 10px; /* Some padding */
-    border-radius: 25px; /* Rounded corners */
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 12px; /* Some padding */
+    border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+
   }
   
     .arriba {
@@ -144,6 +146,14 @@ nav.abajo{
     transform: translate(-50%, -50%);
     line-height: 8rem;
     font-weight: bold;
+  }
+
+  .serv-text{
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0.45;
+    letter-spacing: 2rem;
   }
 
 
@@ -191,7 +201,6 @@ nav.abajo{
         text-transform: uppercase;
         text-shadow: 2px 2px #333333;
       }
-  
 
     /*---------------------------MEDIA QUERIES----------------------------------------------------*/
   
@@ -233,4 +242,26 @@ nav.abajo{
     .transport-text, .traslado-text, .excursions-text, .golf-text, .renthome-text, .rentcar-text{
       font-size: 3rem;
     }
+
+    .serv-text{
+      font-size: 2rem;
+      letter-spacing: 0.5rem;
+    }
+    
   }
+
+  /*Small devices (landscape phones, 576px and up)*/
+  @media (min-width: 576px) { }
+  
+  /*Medium devices (tablets, 768px and up)*/
+  @media (min-width: 768px) {
+   }
+  
+  /* Large devices (desktops, 992px and up)*/
+  @media (min-width: 992px) { }
+  
+  /* X-Large devices (large desktops, 1200px and up)*/
+  @media (min-width: 1200px) { }
+  
+  /* XX-Large devices (larger desktops, 1400px and up)*/
+  @media (min-width: 1400px) {  }
