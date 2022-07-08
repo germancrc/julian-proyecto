@@ -100,7 +100,7 @@ nav.abajo{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     transform: scale(1.05);
     cursor: pointer;
-    text-decoration: underline;
+    /*text-decoration: underline;*/ 
   }
 
   a{
@@ -126,38 +126,71 @@ nav.abajo{
     background-color: blue; /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 20px; /* Rounded corners */
-    font-size: 0.8rem;
+    padding: 10px; /* Some padding */
+    border-radius: 25px; /* Rounded corners */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
   
-  #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    .arriba {
+    font-size: 2rem;
+  }
+
+  .duplicado{
+    font-size: 10rem;
+    opacity: 0.2;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 8rem;
+    font-weight: bold;
   }
 
 
       /*---------------------------imagen cabecera----------------------------------------------------*/
-
-      .transport-head {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/slideGirl.jpg");
+      .transport-head, .traslado-head, .excursions-head, .golf-head, .renthome-head, .rentcar-head{
         height: 69vh;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
       }
+
+      .transport-head {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/slideGirl.jpg");
+      }
+
+      .traslado-head {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/aeropuerto.jpg");
+      }
+
+      .excursions-head {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/playa.jpg");
+      }
+
+      .golf-head {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/golf.jpg");
+      }
+
+      .renthome-head {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/rentapto.jpg");
+      }
+
+      .rentcar-head {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/rentacarro.jpg");
+      }
       
-      .transport-text {
+      .transport-text, .traslado-text, .excursions-text, .golf-text, .renthome-text, .rentcar-text{
         text-align: center;
         position: absolute;
-        top: 55%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
+        font-size: 4rem;
+        text-transform: uppercase;
+        text-shadow: 2px 2px #333333;
       }
-
-
-
   
 
     /*---------------------------MEDIA QUERIES----------------------------------------------------*/
@@ -165,8 +198,8 @@ nav.abajo{
   /*PANTALLAS PEQ*/
   @media (max-width: 575.98px) {
 
-    .slide1, .slide2, .slide3{
-      height: 40vh;
+    .slide1, .slide2, .slide3, .transport-head, .traslado-head, .excursions-head, .golf-head, .renthome-head, .rentcar-head{
+      height: 50vh;
     }
 
     .slide1, .slide2, .slide3{
@@ -184,5 +217,20 @@ nav.abajo{
     
     .tabla{
       margin-top: -2rem;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      transform: none;
+      cursor: pointer;
+      /*text-decoration: underline;*/
+    }
+
+    .duplicado{
+      display: none;
+    }
+    
+    .transport-text, .traslado-text, .excursions-text, .golf-text, .renthome-text, .rentcar-text{
+      font-size: 3rem;
     }
   }
